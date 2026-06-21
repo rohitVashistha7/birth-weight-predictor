@@ -47,7 +47,7 @@ def get_prediction():
   baby_df=pd.DataFrame(baby_cleaned_data)
 
  #* LOADING MACHINE LEARNING TRAINED MODEL , later we keep pkl file outside the model dir in production phase and delete the model directory
-  with open("model/model.pkl","rb") as f:
+  with open("model.pkl","rb") as f:
     model=pickle.load(f)
 
  #* MAKING PREDICTION ON USER DATA
